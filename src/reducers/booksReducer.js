@@ -1,21 +1,9 @@
 export function booksReducers (state={
     books:
-    [{
-        _id:1,
-        title:'Math',
-        description:'this is a math book',
-        price: 13.33
-    },
-        {
-            _id:2,
-            title:'Culture',
-            description:'this is a culture book',
-            price: 22.55
-        }
-    ]}, action) {
+    []}, action) {
     switch (action.type){
         case "GET_BOOK":
-            return {...state, books:[...state.books]};
+            return {...state, books:[...action.payload]};
             break;
         case "POST_BOOK":
             return {books:[...state.books, ...action.payload]};
