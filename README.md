@@ -1,6 +1,11 @@
 # MERN-Books-store
 Technologies used: React, Redux, webpack, MongoDB, Express, Node, Proxy Server
 
+# Run Command
+npm start
+node apiServer.js
+webpack
+
 ## Introduction
 This web application is to build a book store, where customers could purchase books.
 
